@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animais encontrados</title>
+    <link rel="stylesheet" href="estilo.css">
+    <a href="alguemviumeupet.html" class="back-home-button">Voltar para Início</a>
+
+
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Animal Encontrado</h1>
+    </header>
+    
+    <div class="container">
+        <form action="#">
+            <label for="situacao">Situação:</label>
+            <select id="situacao" name="situacao">
+                <option value="perdido">Perdido</option>
+                <option value="procura_dono">À procura do dono</option>
+                <option value="adocao">Para adoção</option>
+            </select>
+    
+            <label for="especie">Espécie:</label>
+            <select id="especie" name="especie">
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+                <option value="passaro">Pássaro</option>
+            </select>
+    
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero">
+                <option value="macho">Macho</option>
+                <option value="femea">Fêmea</option>
+            </select>
+    
+            <label for="foto">Foto do pet:</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+    
+            <input type="submit" value="Próximo Passo">
+        </form>
+    </div>
+    
+    
+    </body>
+    </html>

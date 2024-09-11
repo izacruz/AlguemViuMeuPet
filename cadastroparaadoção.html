@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro para Adoção</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script>
+        function confirmarEnvio() {
+            alert('Formulário enviado com sucesso! Entraremos em contato em breve.');
+        }
+
+        function limparFormulario() {
+            document.getElementById("form-adocao").reset();
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <form id="form-adocao" action="#" onsubmit="confirmarEnvio(); return false;">
+        
+        <label>Você já teve um cão antes?</label>
+        <input type="radio" name="teve_cao" value="sim"> Sim
+        <input type="radio" name="teve_cao" value="nao"> Não
+
+        <label>Você possui outros animais de estimação atualmente?</label>
+        <input type="radio" name="outros_animais" value="sim"> Sim
+        <input type="radio" name="outros_animais" value="nao"> Não
+
+        <label>Por que você quer adotar um cão?</label>
+        <select name="motivo_adocao">
+            <option value="companhia">Companhia</option>
+            <option value="seguranca">Segurança</option>
+            <option value="presente">Presente para alguém</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <label>Onde você mora?</label>
+        <select name="tipo_residencia">
+            <option value="casa_quintal">Casa com quintal</option>
+            <option value="casa_sem_quintal">Casa sem quintal</option>
+            <option value="apartamento">Apartamento</option>
+        </select>
+
+        <label>Todos em sua residência concordam com a adoção?</label>
+        <select name="concorda_adocao">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+            <option value="moro_sozinho">Moro sozinho(a)</option>
+        </select>
+
+        <label>Quanto tempo o cão ficaria sozinho por dia?</label>
+        <select name="tempo_sozinho">
+            <option value="menos_2h">Menos de 2 horas</option>
+            <option value="2_6h">De 2 a 6 horas</option>
+            <option value="mais_6h">Mais de 6 horas</option>
+        </select>
+
+        <label>Você está preparado para os custos com alimentação e cuidados veterinários?</label>
+        <input type="radio" name="preparado_custos" value="sim"> Sim
+        <input type="radio" name="preparado_custos" value="nao"> Não
+
+        <label>Se você precisar viajar, quem cuidará do cão?</label>
+        <select name="cuidado_viagem">
+            <option value="amigos_familia">Amigos ou familiares</option>
+            <option value="petsitter">Pet sitter ou hotel para cães</option>
+            <option value="nao_pensou">Ainda não pensei sobre isso</option>
+        </select>
+
+        <label>Por qual cãozinho você tem interesse e por quê?</label>
+        <textarea name="interesse_caozinho" rows="4" cols="50" placeholder="Descreva o cãozinho e o motivo do seu interesse"></textarea>
+
+        <input type="submit" value="Enviar Formulário">
+        <input type="button" value="Limpar Formulário" onclick="limparFormulario()">
+    </form>
+</div>
+
+<a href="alguemviumeupet.html" class="back-home-button">Voltar para Início</a>
+
+</body>
+</html>
